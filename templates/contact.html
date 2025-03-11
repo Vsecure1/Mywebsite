@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Studio</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Design Studio</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Raise Ticket</a>
+            <div class="dropdown-content">
+              <a href="ticket.html">Submit a Ticket</a>
+              <a href="onboarding.html">Client Onboarding Form</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="submit_contact_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <script src="../static/scripts.js"></script>
+
+    <div class="contact-info">
+      <p>Email: info@designstudios.com</p>
+      <p>Phone: +91 90807 54367</p>
+      <p>Address: 15 New Colony Street, Chrompet, Chennai</p>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <p>Email: info@designstudios.com</p>
+          <p>Phone: +91 90807 54367</p>
+          <p>Address: 15 New Colony Street, Chrompet, Chennai</p>
+        </div>
+        <p>&copy; 2025 Design Studio. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img src="../static/icons/facebook.png" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/?lang=en"
+              ><img src="../static/icons/twitter.png" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"
+              ><img src="../static/icons/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

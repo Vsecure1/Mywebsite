@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Studio</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Design Studio</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Raise Ticket</a>
+            <div class="dropdown-content">
+              <a href="ticket.html">Submit a Ticket</a>
+              <a href="onboarding.html">Client Onboarding Form</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="onboarding">
+      <h1>Client Onboarding Form 1</h1>
+      <form action="../submit_onboarding.php" method="POST">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required />
+
+        <label for="company-name">Company Name (if applicable)</label>
+        <input type="text" id="company-name" name="company-name" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="project-description">Project Description</label>
+        <textarea
+          id="project-description"
+          name="project-description"
+          rows="4"
+          required
+        ></textarea>
+
+        <label for="features">Desired Website Features</label>
+        <select id="features" name="features[]" multiple>
+          <option value="e-commerce">E-commerce</option>
+          <option value="blog">Blog</option>
+          <option value="portfolio">Portfolio</option>
+          <option value="seo">SEO</option>
+        </select>
+
+        <label for="template">Preferred Template</label>
+        <select id="template" name="template">
+          <option value="template1">Template 1</option>
+          <option value="template2">Template 2</option>
+          <option value="template3">Template 3</option>
+        </select>
+
+        <label for="budget">Budget</label>
+        <input type="text" id="budget" name="budget" required />
+
+        <label for="timeline-start">Start Date</label>
+        <input type="date" id="timeline-start" name="timeline-start" required />
+
+        <label for="timeline-end">End Date</label>
+        <input type="date" id="timeline-end" name="timeline-end" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <p>Email: info@designstudios.com</p>
+          <p>Phone: +91 90807 54367</p>
+          <p>Address: 15 New Colony Street, Chrompet, Chennai</p>
+        </div>
+        <p>&copy; 2025 Design Studio. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img src="../static/icons/facebook.png" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/?lang=en"
+              ><img src="../static/icons/twitter.png" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"
+              ><img src="../static/icons/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script></script>
+  </body>
+</html>
